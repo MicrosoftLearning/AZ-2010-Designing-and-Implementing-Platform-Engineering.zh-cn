@@ -31,6 +31,14 @@ lab:
 ### 任务 1：安装 Bicep CLI
 
 1. 打开本地终端。
+1. 登录到 Azure 帐户：
+
+   ```bash
+   az login
+   ```
+
+   > **注意：** 按照提示使用 Azure 帐户进行身份验证。 这将打开 Web 浏览器进行身份验证。
+
 1. 要验证是否已安装 Bicep，请运行：
 
    ```bash
@@ -280,7 +288,7 @@ lab:
 1. 在此资源之后，立即添加 autoscaleSetting 配置：
 
    ```bicep
-   resource autoscaleSetting 'Microsoft.Insights/autoscaleSettings@2024-01-01-preview' = {
+   resource autoscaleSetting 'Microsoft.Insights/autoscaleSettings@2022-10-01' = {
    name: 'autoscale-rule'
    location: location
    properties: {

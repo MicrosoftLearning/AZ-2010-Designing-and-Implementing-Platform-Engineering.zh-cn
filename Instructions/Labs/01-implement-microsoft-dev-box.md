@@ -455,7 +455,7 @@ Microsoft Dev Box 依靠 Azure 基于角色的访问控制 (Azure RBAC) 来控�
          "properties": {
            "buildTimeoutInMinutes": 100,
            "vmProfile": {
-             "vmSize": "Standard_DS2_v2",
+             "vmSize": "Standard_D2s_v3",
              "osDiskSizeGB": 127
            },
            "source": {
@@ -607,6 +607,17 @@ Microsoft Dev Box 依靠 Azure 基于角色的访问控制 (Azure RBAC) 来控�
 1. 在 **devcenter-project-01 \| 目录**页面，选择 **+ 添加**。
 1. 在**添加目录**窗格中的**名称**文本框中，输入 **`image-definitions-01`**，在**目录源**部分选择**GitHub**，在**身份验证类型**中选择 **GitHub Apps**，保留**自动同步此目录**复选框选，最后选择**使用 GitHub 登录**。
 1. 如果系统提示，在**使用 GitHub 登陆**窗口中输入你的 GitHub 凭据，然后选择**登录**。
+1. 如果你看到一条消息，指出“找不到与帐户关联的任何 GitHub 存储库”，其中包含一个用于配置存储库的链接，这通常在首次设置期间或之前未配置 GitHub Apps 时发生****。 完成以下附加步骤以设置 Microsoft DevCenter GitHub Apps：
+
+   1. 选择“配置存储库”链接。**** 这将打开定向到 GitHub 的新浏览器选项卡或窗口。
+   1. 在 GitHub 的“安装 Microsoft DevCenter”页上，系统会提示你在个人帐户上安装该应用****。
+   1. 在“在个人帐户上安装”部分中，选择以下选项之一：****
+      - 选择“所有存储库”以授予对帐户中所有当前和将来存储库的访问权限****。
+      - 选择“仅选中的存储库”以选择特定存储库****。 在继续操作之前，请确保已向 GitHub 帐户创建 contoso-co-eShop 存储库的分支****。 如果选择此选项，请使用“选择存储库”下拉列表来选择 contoso-co-eShop 存储库（或想要向 Azure DevCenter 提供的任何其他存储库）********。
+   1. 在“具有这些权限”部分下查看将授予的权限，该部分通常包括“对代码和元数据的读取访问权限”****。
+   1. 选择“安装”**** 以完成 GitHub Apps 安装。
+   1. 你将被重定向回 Azure 门户。 如果重定向未自动发生，请关闭 GitHub 选项卡并返回到 Azure 门户。
+   1. 返回 Azure 门户，在“添加目录”页上，选择“刷新”或刷新页面以重新加载存储库列表********。
 
    > **注意：** 在完成此步骤之前，你需要将 https://github.com/MicrosoftLearning/contoso-co-eShop 存储库分叉到你的 GitHub 帐户。
 
