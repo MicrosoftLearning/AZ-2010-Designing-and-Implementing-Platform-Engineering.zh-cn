@@ -1,3 +1,7 @@
+> ⚠️ 通知****  
+> 此存储库将于 2025 年 11 月 14 日存档****。  
+> 可在以下位置找到新的 DevOps 实验室存储库：[MicrosoftLearning/mslearn-devops](https://github.com/MicrosoftLearning/mslearn-devops)
+
 # Microsoft 实验室练习
 <!-- Change the title above as appropriate -->
 
